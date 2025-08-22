@@ -8,9 +8,23 @@
         *{
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0rem;
+            margin: 0rem;
         }
+    
+    html{
+        /* border: .2rem solid aqua; */
+    }
+
+    body{
+        /* border: .2rem solid green; */
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
     header{
-        border: .2rem solid red;
+        /* border: .2rem solid red; */
         display: flex;
         background-color: rgb(97, 87, 87);
         padding: .6rem;
@@ -18,23 +32,65 @@
     }
 
     #logo{
-        border: .2rem solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .2rem solid rgb(255, 255, 255);
         border-radius: 100rem;
         width: 3rem;
         height: 3rem;
         font-size: 2rem;
         font-weight: bold;
         margin-right: 1rem;
-        background-color: blue;
-        color: rgb(190, 188, 188);
-        align-items: center;
+        background-color: rgb(255, 0, 191);
+        color: rgb(255, 255, 255);
+       
 
     }
 
     #titulo{
         font-size: 2rem;
         font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+    section{
+        /* border: .2rem solid purple; */
+        flex: 1;
+        display: flex;
+    }
+
+    nav{
+        /* border: .2rem solid plum; */
+        width: 15rem;
+        background-color: gainsboro;
+    }
+
+    main{
+        /* border: .2rem solid purple; */
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .cartao{
+        border: .2rem solid rgb(163, 0, 163);
+        width: 15rem;
+        height: 20rem;
+        padding: .7rem;
+        box-shadow: .5rem .5rem .3rem .01rem rgb(146, 146, 146);
+    }
+
+    .produto{
+        width: 15rem;
+    }
+
+    footer{
+        /* border: .2rem solid yellow; */
+        background-color: rgb(185, 114, 114);
+        padding: .6rem;
+        height: 3rem.;
         color: rgb(190, 188, 188);
+
     }
 
     </style>
@@ -44,5 +100,18 @@
         <div id="logo">M</div>
         <h1 id= titulo>Meu Site</h1>
     </header>
+    <section>
+        <nav>
+        </nav>
+        <main>
+            <div class="cartao">
+                <img class="produto"  src="assets/images.png" alt="mcdonalds">
+                Meu cartão
+            </div>
+        </main>
+    </section>
+    <footer>
+        &copy; 2025 Meu site ❤️
+    </footer>
 </body>
 </html>
