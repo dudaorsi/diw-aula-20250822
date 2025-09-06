@@ -42,9 +42,44 @@
     }
 
     #titulo{
+        /* border: .1rem solid white; */
         font-size: 2rem;
         font-weight: bold;
         color: rgb(255, 255, 255);
+        flex: 1;
+    }
+
+    .menu-hamburguer{
+        /* color: green; */
+        /* border: .1rem solid red; */
+        border-radius: 100%;
+        padding: .7rem;
+        /* font-size: 1.5rem; */
+        display: flex;
+        width: 1.2rem;
+        height: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgb(58, 58, 58);
+
+    }
+
+    .menu-hamburguer:hover{
+        background-color: #5e5e5e;
+    }
+
+    .menu-hamburguer:hover i{
+        color: #eee;
+    }
+
+    .menu-hamburguer i:hover{
+        color: rgb(255, 0, 0);
+    }
+
+    .menu-hamburguer i{
+        font-size: 1.5rem;
+        color: #ccc;
     }
 
     section{
@@ -61,6 +96,10 @@
         /* border: .2rem solid plum; */
         width: 15rem;
         background-color: gainsboro;
+    }
+
+    li{
+        margin-bottom: .6rem;
     }
 
     .opcao{
@@ -158,6 +197,9 @@
     }
 
     @media (max-width: 576px){
+        #titulo{
+            opacity: 0;
+        }
         nav{
             display: none;
         }
